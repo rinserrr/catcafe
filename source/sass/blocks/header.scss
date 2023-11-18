@@ -1,0 +1,44 @@
+// .header {
+// }
+
+// .container {
+// }
+
+.header__wrapper {
+  padding: 0 90px;
+  min-height: 80px;
+
+  display: flex;
+  // justify-content: space-between;
+  align-items: center;
+}
+
+// .header__logo-link {
+// }
+
+// .logo {
+// }
+
+// .header__logo {
+// }
+
+.header__title {
+  margin: 0;
+  margin-left: 24px;
+  padding: 0;
+
+  font-family: Inter;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 115%; /* 32.2px */
+
+  color: $color-night-rider;
+}
+
+.header__button {
+  margin-left: auto;
+}
+
+// .button {
+// }
