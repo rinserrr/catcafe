@@ -25,6 +25,7 @@
 @import "blocks/custom-select";
 
 @import "blocks/header";
+@import "blocks/about";
 
 // ---------------------------------
 
@@ -79,23 +80,3 @@
 // для любых transition обязательно указывайте transition-property
 // transition: $trans-default ❌ ---> transition: color $trans-default ✅
 
-.p1 {
-  color: #333;
-
-font-family: Inter;
-font-size: 28px;
-font-style: normal;
-font-weight: 700;
-line-height: 115%; /* 32.2px */
-}
-
-.p2 {
-  color: #333;
-
-/* Body 18px/Regular */
-font-family: Inter;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: 150%; /* 27px */
-}

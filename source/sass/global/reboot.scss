@@ -12,12 +12,13 @@ body {
 }
 
 html {
+  /* Default Fonts */
+  font-family: $ff-inter;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  font-size: $fz-default;
-  line-height: 24px;
-  font-family: $ff-roboto;
-  color: var(--color-sapphire);
+  line-height: 150%; /* 27px */
+  color: $color-night-rider;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -30,8 +31,6 @@ html {
 body {
   width: 100%;
   height: 100%;
-
-  background-color: var(--color-alice-blue);
 }
 
 a {

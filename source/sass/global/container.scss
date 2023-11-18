@@ -19,13 +19,9 @@
   margin: 0 auto;
   padding: 0 90px;
 
-  outline: 2px solid rgb(27, 177, 27);
-  outline-offset: -2px;
+  // outline: 2px solid rgb(27, 177, 27);
+  // outline-offset: -2px;
 
-  h2 {
-    margin: 0;
-    padding: 0;
-  }
 
   // tablet
   @include vp-1199 {
