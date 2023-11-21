@@ -1,0 +1,25 @@
+.header__wrapper {
+  padding: 0 90px;
+  min-height: 80px;
+
+  display: flex;
+  align-items: center;
+}
+
+.header__title {
+  margin: 0;
+  margin-left: 24px;
+  padding: 0;
+
+  font-family: Inter;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 115%; /* 32.2px */
+
+  color: var(--color-night-rider);
+}
+
+.header__link {
+  margin-left: auto;
+}
