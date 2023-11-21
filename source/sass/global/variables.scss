@@ -1,46 +1,48 @@
 // Colors
 // ---------------------------------
 
-// Default
 
-$color-default-black: #000000;
-$color-default-white: #ffffff;
-$color-transparent: rgba(255, 255, 255, 0);
+:root {
+  // Default
 
-// Project palette
-// для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
+  --color-default-black: #000000;
+  --color-default-white: #ffffff;
+  --color-transparent: rgba(255, 255, 255, 0);
 
-$color-neon-blue: #2c39f2;
-$color-torch-red: #ed0233;
+  // Project palette
+  // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
 
-$color-saphire: #102654;
-$color-cobalt: #003eb7;
+  --color-neon-blue: #2c39f2;
+  --color-torch-red: #ed0233;
 
-
-$color-night-rider:                 #333333;
-$color-white-smoke:                 #f6f6f6;
-$color-corn-silk:                   #FFF6D9;
-$color-banana-mania:                #FFEEAD;
-$color-supernova:                   #FFB334;
-$color-yellow-green:                #7FC92E;
-$color-burnt-orange:                #FF732B;
+  --color-saphire: #102654;
+  --color-cobalt: #003eb7;
 
 
+  --color-night-rider: #333333;
+  --color-white-smoke: #f6f6f6;
+  --color-corn-silk: #FFF6D9;
+  --color-banana-mania: #FFEEAD;
+  --color-supernova: #FFB334;
+  --color-yellow-green: #7FC92E;
+  --color-burnt-orange: #FF732B;
 
-// Gradient
 
-$black-to-right: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
-$conic-desktop: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
-$conic-tablet: conic-gradient(from 139.4deg at 20.7% 35.74%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
-$conic-mobile: conic-gradient(from 171.43deg at 35.31% 34.22%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
-$red-to-blue-right: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
-$red-to-blue-diagon: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
-$blue-to-red: linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
-$red-to-blue-opacity: linear-gradient(97.05deg, rgba(237, 2, 51, 0.2) 17.6%, rgba(0, 62, 183, 0.2) 95.31%);
-$red-to-blue-number: linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
-$red-corner: linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
-$blue-to-left: linear-gradient(90deg, #102654 50%, #ffffff 50%);
-$blue-to-red-button: linear-gradient(90.92deg, rgba(0, 57, 220, 0.69) 0%, rgba(237, 0, 67, 0.69) 100%);
+  // Gradient
+
+  --black-to-right: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
+  --conic-desktop: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+  --conic-tablet: conic-gradient(from 139.4deg at 20.7% 35.74%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+  --conic-mobile: conic-gradient(from 171.43deg at 35.31% 34.22%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+  --red-to-blue-right: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+  --red-to-blue-diagon: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
+  --blue-to-red: linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
+  --red-to-blue-opacity: linear-gradient(97.05deg, rgba(237, 2, 51, 0.2) 17.6%, rgba(0, 62, 183, 0.2) 95.31%);
+  --red-to-blue-number: linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
+  --red-corner: linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
+  --blue-to-left: linear-gradient(90deg, #102654 50%, #ffffff 50%);
+  --blue-to-red-button: linear-gradient(90.92deg, rgba(0, 57, 220, 0.69) 0%, rgba(237, 0, 67, 0.69) 100%);
+}
 
 
 // Typography

@@ -1,0 +1,19 @@
+.new {
+  width: 75px;
+  height: 43px;
+  padding: 8px 16px;
+  display: inline-flex;
+  border-radius: 8px 8px 8px 0px;
+  background: var(--color-supernova);
+
+  color: var(--color-default-white);
+  /* Body 18px / Bold */
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  /* 27px */
+
+  position: absolute;
+}

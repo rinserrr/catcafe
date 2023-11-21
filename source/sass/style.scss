@@ -15,7 +15,7 @@
 @import "global/utils";
 @import "global/container";
 
-// Blocks
+// Components
 // ---------------------------------
 
 @import "blocks/button.scss";
@@ -23,9 +23,18 @@
 @import "blocks/custom-input";
 @import "blocks/custom-toggle";
 @import "blocks/custom-select";
+@import "blocks/h2";
+@import "blocks/h3";
+@import "blocks/new";
+@import "blocks/tender";
+
+// Blocks
+// ---------------------------------
 
 @import "blocks/header";
 @import "blocks/about";
+@import "blocks/stars";
+@import "blocks/product";
 
 // ---------------------------------
 

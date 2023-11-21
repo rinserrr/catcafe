@@ -1,5 +1,5 @@
 .about {
-  background-color: $color-corn-silk;
+  background-color: var(--color-corn-silk);
 }
 
 .about__wrapper {
@@ -59,7 +59,7 @@
   gap: 4px;
 
   border-radius: 8px;
-  background: $color-banana-mania;
+  background: var(--color-banana-mania);
 
   position: relative;
   z-index: 2;
@@ -77,7 +77,7 @@ address {
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 27px */
-  color: $color-night-rider;
+  color: var(--color-night-rider);
 
   position: relative;
   z-index: 2;

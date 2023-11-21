@@ -32,7 +32,7 @@
   font-weight: 700;
   line-height: 115%; /* 32.2px */
 
-  color: $color-night-rider;
+  color: var(--color-night-rider);
 }
 
 .header__link {
