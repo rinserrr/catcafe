@@ -2,9 +2,6 @@
   margin-bottom: 44px;
 }
 
-// .product__wrapper {
-// }
-
 .product__list {
   margin: 0;
   padding: 0;
@@ -13,7 +10,6 @@
   display: grid;
   grid-template-columns: repeat(3, minmax(200px, 353px));
   column-gap: 20px;
-  grid-auto-columns: auto;
 
   position: relative;
   z-index: 4;
@@ -53,13 +49,11 @@
 .product__text {
   margin: 0;
 
-  /* Body 18px/Regular */
   font-family: Inter;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
-  /* 27px */
 
   color: var(--color-night-rider);
 }
