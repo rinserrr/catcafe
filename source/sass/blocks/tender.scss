@@ -3,11 +3,11 @@
   padding: 8px 16px;
   align-items: flex-start;
   gap: 10px;
-  border-radius: 8px 8px 8px 0px;
+  border-radius: 8px 8px 8px 0;
   background: var(--color-yellow-green);
 
   color: var(--color-default-white);
-  font-family: Inter;
+  font-family: $ff-inter;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
