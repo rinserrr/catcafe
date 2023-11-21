@@ -31,6 +31,9 @@
   font-size: 44px;
   font-weight: 700;
   line-height: 115%; /* 50.6px */
+
+  position: relative;
+  z-index: 2;
 }
 
 .about__text {
@@ -39,6 +42,9 @@
   margin-bottom: 40px;
 
   font-family: inherit;
+
+  position: relative;
+  z-index: 2;
 }
 
 .about__work-time {
@@ -54,6 +60,9 @@
 
   border-radius: 8px;
   background: $color-banana-mania;
+
+  position: relative;
+  z-index: 2;
 }
 
 .about__work {
@@ -69,6 +78,9 @@ address {
   font-weight: 400;
   line-height: 150%; /* 27px */
   color: $color-night-rider;
+
+  position: relative;
+  z-index: 2;
 }
 
 // .about__work-address {
