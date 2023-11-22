@@ -1,0 +1,113 @@
+.gallery {
+  background-color: var(--color-banana-mania);
+}
+
+.gallery__wrapper {
+  padding: 79px 187px 100px;
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    width: 113.23px;
+    height: 168.66px;
+    position: absolute;
+    content: "";
+    bottom: -12px;
+    left: 0;
+    background-image: url("../../img/gallery/fon2.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &::before {
+    width: 321px;
+    height: 305px;
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    background-image: url("../../img/gallery/fon1.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.gallery__title {
+  margin: 0 auto;
+  margin-bottom: 64px;
+  display: flex;
+  justify-content: center;
+
+  position: relative;
+  z-index: 2;
+}
+
+.gallery__full-img {
+  margin: 0 auto;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: var(--color-white-smoke);
+  overflow: hidden;
+
+  position: relative;
+  z-index: 2;
+}
+
+.gallery__previews-list {
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+}
+
+.gallery__previews-item {
+  border-radius: 12px;
+  position: relative;
+}
+
+.gallery__previews-img {
+  border-radius: 12px;
+  background-color: var(--color-white-smoke);
+}
+
+.gallery__previews-img-filter {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  // background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), rgb(211, 211, 211) 50% / cover no-repeat;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0, rgba(0, 0, 0, 0.50) 100%);
+  border-radius: 12px;
+}
+
+.gallery__slider-prev {
+  width: 64px;
+  height: 64px;
+  padding: 20px 20px;
+  border-radius: 50%;
+
+  position: absolute;
+  content: "";
+  bottom: 132px;
+  left: 182px;
+}
+
+.gallery__slider-next {
+  width: 64px;
+  height: 64px;
+  padding: 20px 20px;
+  border-radius: 50%;
+
+  position: absolute;
+  content: "";
+  bottom: 132px;
+  right: 182px;
+}

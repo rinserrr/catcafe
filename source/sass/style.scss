@@ -23,6 +23,7 @@
 @import "blocks/custom-input";
 @import "blocks/custom-toggle";
 @import "blocks/custom-select";
+@import "blocks/h1";
 @import "blocks/h2";
 @import "blocks/h3";
 @import "blocks/new";
@@ -31,11 +32,15 @@
 // Blocks
 // ---------------------------------
 
+// index.html
 @import "blocks/header";
 @import "blocks/about";
 @import "blocks/stars";
 @import "blocks/product";
 @import "blocks/footer";
+
+// ticket.html
+@import "blocks/gallery";
 
 // ---------------------------------
 
