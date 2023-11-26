@@ -1,0 +1,156 @@
+/* radio button */
+
+.filter-time {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
+  border: 0;
+}
+
+.filter-time__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: var(--color-night-rider);
+}
+
+.filter-time__list {
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+  column-gap: 45px;
+
+  @include list-reset;
+}
+
+// .filter-time__item {
+// }
+
+// .filter-time__item:last-child {
+// }
+
+.filter-time__label {
+  position: relative;
+  cursor: pointer;
+
+  @include focus-state;
+}
+
+.filter-time__label-text {
+  position: relative;
+  left: 18px;
+  top: 11px;
+  color: var(--color-default-black);
+}
+
+/* не активные radio */
+.filter-time__label::before {
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  // border-radius: 50%;
+  border-radius: 8px;
+  border: 2px solid var(--color-white-smoke);
+  background-color: var(--color-white-smoke);
+}
+
+/* заливка кнопки в default checked */
+.filter-time__label::after {
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  // border-radius: 50%;
+  border-radius: 8px;
+  background-color: var(--color-burnt-orange);
+}
+
+/* заливка не нажатой кнопки при фокусе и ховере */
+.filter-time__label:hover.filter-time__label::after,
+.filter-time__label:focus.filter-time__label::after {
+  content: "";
+  background-color: var(--color-serenade);
+}
+
+/* бордер при фокусе и ховере не нажатой кнопки */
+.filter-time__label:hover.filter-time__label::before,
+.filter-time__label:focus.filter-time__label::before {
+  border: 2px solid var(--color-burnt-orange);
+}
+
+/* заливка когда нажали но не отпустили */
+.filter-time__radio:active + .filter-time__label::after {
+  content: "";
+  background-color: var(--color-burnt-orange-persimmon);
+}
+
+/* заливка при checked */
+.filter-time__radio:checked + .filter-time__label::after {
+  content: "";
+  color: var(--color-default-black);
+  background-color: var(--color-burnt-orange);
+}
+
+/* заливка текста при checked */
+.filter-time__radio:checked ~ .filter-time__label-text {
+  content: "";
+  // color: black;
+  color: var(--color-default-white);
+}
+
+/* бордер при чекеде */
+.filter-time__radio:checked + .filter-time__label::before {
+  border: 2px solid var(--color-burnt-orange);
+}
+
+/* заливка при дизейбл */
+// .filter-time__radio:disabled + .filter-time__label::after {
+//   background-color: var(--color-serenade);
+// }
+.filter-time__radio:disabled + .filter-time__label::before {
+  background-color: var(--color-alt-light-grey);
+}
+
+/* заливка не нажатой disaled кнопки при фокусе и ховере */
+.filter-time__label--disabled:hover.filter-time__label--disabled::after,
+.filter-time__label--disabled:focus.filter-time__label--disabled::after {
+  content: "";
+  background-color: var(--color-alt-light-grey);
+}
+
+/* бордер при фокусе и ховере disabled не нажатой кнопки */
+.filter-time__label--disabled:hover.filter-time__label--disabled::before,
+.filter-time__label--disabled:focus.filter-time__label--disabled::before {
+  border: 2px solid var(--color-alt-light-grey);
+}
+
+/* бордер при дизейбл */
+/* stylelint-disable */
+.filter-time__radio:disabled + .filter-time__label::before {
+  border: 2px solid var(--color-alt-light-grey);
+}
+/* stylelint-enable */
+
+/* текст при дизейбл */
+.filter-time__radio:disabled ~ .filter-time__label-text {
+  color: var(--color-white-smoke);
+
+  cursor: auto;
+}
+
+/* заливка при нажатом дизейбл */
+.filter-time__radio:checked:disabled + .filter-time__label::after {
+  content: "";
+  background-color: var(--color-white-smoke);
+}
+
+/* бордер при нажатом дизейбл */
+.filter-time__radio:checked:disabled + .filter-time__label::before {
+  border: 2px solid  var(--color-alt-light-grey);
+}

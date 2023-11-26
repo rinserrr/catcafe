@@ -94,6 +94,117 @@
         </div>
       </section>
 
+      <section class="ticket">
+        <div class="container">
+          <div class="ticket__wrapper">
+            <h2 class="ticket__title h1 noselect">Купить билет</h2>
+
+
+            <form class="ticket__form form-filter" action="https://echo.htmlacademy.ru" method="post">
+
+              <fieldset class="form-filter filter-time">
+                <legend class="filter-time__title">Продолжительность (часов)</legend>
+
+                <ul class="filter-time__list">
+                  <li class="filter-time__item">
+                    <input class="visually-hidden filter-time__radio" type="radio" name="time" value="1" id="time-one" checked>
+                    <label class="filter-time__label" for="time-one">
+                      <!-- 1 -->
+                    </label>
+                    <span class="filter-time__label-text noselect">1</span>
+                  </li>
+
+                  <li class="filter-time__item">
+                    <input class="visually-hidden filter-time__radio" type="radio" name="time" value="2" id="time-two">
+                    <label class="filter-time__label" for="time-two">
+                      <!-- 2 -->
+                    </label>
+                    <span class="filter-time__label-text noselect">2</span>
+                  </li>
+
+                  <li class="filter-time__item">
+                    <input class="visually-hidden filter-time__radio" type="radio" name="time" value="3" id="time-three">
+                    <label class="filter-time__label" for="time-three">
+                      <!-- 3 -->
+                    </label>
+                    <span class="filter-time__label-text noselect">3</span>
+                  </li>
+
+                  <li class="filter-time__item">
+                    <input class="visually-hidden filter-time__radio" type="radio" name="time" value="4" id="time-four">
+                    <label class="filter-time__label" for="time-four">
+                      <!-- 4 -->
+                    </label>
+                    <span class="filter-time__label-text noselect">4</span>
+                  </li>
+
+                  <li class="filter-time__item">
+                    <input class="visually-hidden filter-time__radio" type="radio" name="time" value="5" id="time-five" disabled>
+                    <label class="filter-time__label filter-time__label--disabled" for="time-five">
+                      <!-- 5 -->
+                    </label>
+                    <span class="filter-time__label-text noselect">5</span>
+                  </li>
+                </ul>
+              </fieldset>
+
+              <fieldset class="form-filter filter-type">
+                <legend class="filter-type__title">Тип билета</legend>
+
+                <ul class="filter-type__list">
+                  <li class="filter-type__item">
+                    <input class="visually-hidden filter-type__radio" type="radio" name="type-ticket" value="standard" id="type-standard" checked>
+                    <label class="filter-type__label" for="type-standard"></label>
+                    <span class="filter-type__label-text">Стандартный</span>
+
+                    <svg class="filter-type__arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_12_872)">
+                      <path d="M7.37568 12.4447L0.255608 5.32449C0.0907959 5.15981 -7.16833e-08 4.93997 -6.14371e-08 4.70557C-5.1191e-08 4.47116 0.090796 4.25133 0.255608 4.08664L0.779831 3.56229C1.12142 3.22109 1.6766 3.22109 2.01767 3.56229L7.99668 9.5413L13.9823 3.55566C14.1471 3.39098 14.3668 3.30005 14.6011 3.30005C14.8357 3.30005 15.0554 3.39098 15.2203 3.55566L15.7444 4.08001C15.9092 4.24482 16 4.46453 16 4.69893C16 4.93334 15.9092 5.15317 15.7444 5.31785L8.61782 12.4447C8.45248 12.6098 8.23174 12.7004 7.99707 12.6999C7.7615 12.7004 7.54088 12.6098 7.37568 12.4447Z" fill="#333333"/>
+                      </g>
+                      <defs>
+                      <clipPath>
+                      <rect width="16" height="16" fill="white" transform="matrix(-4.37114e-08 1 1 4.37114e-08 0 0)"/>
+                      </clipPath>
+                      </defs>
+                    </svg>
+                  </li>
+
+                  <li class="filter-type__item filter-type__item--vip">
+                    <input class="visually-hidden filter-type__radio filter-type__radio--vip" type="radio" name="type-ticket" value="vip" id="type-vip">
+                    <label class="filter-type__label" for="type-vip"></label>
+                    <span class="filter-type__label-text">VIP</span>
+
+                    <svg class="filter-type__arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_12_872)">
+                      <path d="M7.37568 12.4447L0.255608 5.32449C0.0907959 5.15981 -7.16833e-08 4.93997 -6.14371e-08 4.70557C-5.1191e-08 4.47116 0.090796 4.25133 0.255608 4.08664L0.779831 3.56229C1.12142 3.22109 1.6766 3.22109 2.01767 3.56229L7.99668 9.5413L13.9823 3.55566C14.1471 3.39098 14.3668 3.30005 14.6011 3.30005C14.8357 3.30005 15.0554 3.39098 15.2203 3.55566L15.7444 4.08001C15.9092 4.24482 16 4.46453 16 4.69893C16 4.93334 15.9092 5.15317 15.7444 5.31785L8.61782 12.4447C8.45248 12.6098 8.23174 12.7004 7.99707 12.6999C7.7615 12.7004 7.54088 12.6098 7.37568 12.4447Z" fill="#333333"/>
+                      </g>
+                      <defs>
+                      <clipPath>
+                      <rect width="16" height="16" fill="white" transform="matrix(-4.37114e-08 1 1 4.37114e-08 0 0)"/>
+                      </clipPath>
+                      </defs>
+                    </svg>
+
+                    <ul class="filter-type__vip-text">
+                      <li>Акции по пристройству и выставки кошек</li>
+                      <li>Встречи фелинологов и любителей кошек</li>
+                      <li>Мероприятия для детей, экскурсии</li>
+                    </ul>
+                  </li>
+                </ul>
+              </fieldset>
+
+              <div class="form-filter filter-price">
+                <p class="filter-price__title">Цена</p>
+                <p class="filter-price__value">300 руб.</p>
+              </div>
+
+              <button class="ticket__form-button button">Купить билет</button>
+            </form>
+
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer noselect">

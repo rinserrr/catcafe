@@ -1,0 +1,28 @@
+.filter-price__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+
+  font-family: $ff-inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+
+  color: var(--color-night-rider);
+}
+
+
+.filter-price__value {
+  margin: 0;
+  margin-bottom: 38px;
+  padding: 0;
+
+  font-family: $ff-inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 115%;
+
+  color: var(--color-night-rider);
+}
