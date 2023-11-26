@@ -128,3 +128,25 @@
 
 // не нужно добавлять свои миксины для ресета списков, обнуления кнопок и прочие
 // этим вы усложняете работу команды, проверку вашего кода и будущую поддержку проекта
+
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+// Focus State
+@mixin focus-state {
+  &:focus:not(:focus-visible) {
+    box-shadow: none;
+    outline: 0;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-base-purple);
+    outline-offset: -2px;
+    border-radius: 2px;
+    z-index: 50;
+  }
+}

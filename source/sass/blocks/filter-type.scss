@@ -1,0 +1,181 @@
+/* radio button */
+
+.filter-type {
+  margin: 0;
+  margin-bottom: 17px;
+  padding: 0;
+  border: 0;
+}
+
+.filter-type__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 12px;
+  font-weight: 700;
+  color: var(--color-night-rider);
+}
+
+.filter-type__list {
+  @include list-reset;
+}
+
+.filter-type__item {
+  padding-top: 12px;
+  padding-left: 20px;
+  padding-right: 15px;
+  padding-bottom: 9px;
+  min-height: 48px;
+  margin-bottom: 8px;
+
+  border-radius: 10px;
+  background-color: var(--color-white-smoke);
+  position: relative;
+}
+
+.filter-type__label-text {
+  padding-top: 10px;
+  padding-bottom: 11px;
+}
+
+// показываем arrow
+.filter-type__arrow {
+  position: absolute;
+  content: "";
+  top: 17px;
+  right: 20px;
+}
+
+// переворачиваем arrow при клике
+.filter-type__radio:checked ~ .filter-type__arrow {
+  transform: rotate(180deg);
+}
+
+.filter-type__vip-text {
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  padding-top: 20px;
+  display: none;
+  list-style-type: disc;
+}
+
+// показываем text select при hover
+.filter-type__item--vip:hover .filter-type__vip-text {
+  display: block;
+  opacity: 1;
+
+  animation: showVIP 1s ease-in-out;
+}
+
+@keyframes showVIP {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  1% {
+    display: block;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+.filter-type__label {
+  padding-left: 27px;
+  position: relative;
+  cursor: pointer;
+
+  @include focus-state;
+}
+
+/* не активные radio */
+.filter-type__label::before {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  border: 2px solid var(--color-base-gray);
+}
+
+/* заливка кнопки в default checked */
+.filter-type__label::after {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  border-radius: 50%;
+  background-color: var(--color-burnt-orange);
+}
+
+/* заливка не нажатой кнопки при фокусе и ховере */
+.filter-type__label:hover.filter-type__label::after,
+.filter-type__label:focus.filter-type__label::after {
+  content: "";
+  background-color: var(--color-serenade);
+}
+
+/* бордер при фокусе и ховере не нажатой кнопки */
+.filter-type__label:hover.filter-type__label::before,
+.filter-type__label:focus.filter-type__label::before {
+  border: 2px solid var(--color-burnt-orange);
+}
+
+/* заливка когда нажали но не отпустили */
+.filter-type__radio:active + .filter-type__label::after {
+  content: "";
+  background-color: var(--color-burnt-orange-persimmon);
+}
+
+/* заливка при checked */
+.filter-type__radio:checked + .filter-type__label::after {
+  content: "";
+  background-color: var(--color-burnt-orange);
+}
+
+/* текст при checked */
+// .filter-type__radio:checked ~ .filter-type__vip-text {
+.filter-type__radio--vip:checked ~ .filter-type__vip-text {
+  display: block;
+  opacity: 1;
+  animation: showVIP 0s ease-in-out;
+}
+
+/* бордер при чекеде */
+.filter-type__radio:checked + .filter-type__label::before {
+  border: 2px solid var(--color-burnt-orange);
+}
+
+/* заливка при дизейбл */
+.filter-type__radio:disabled + .filter-type__label::after {
+  background-color: transparent;
+}
+
+/* бордер при дизейбл */
+.filter-type__radio:disabled + .filter-type__label::before {
+  border: 2px solid var(--color-alt-light-grey);
+}
+
+/* текст при дизейбл */
+.filter-type__radio:disabled + .filter-type__label {
+  color: var(--color-base-gray);
+  cursor: auto;
+}
+
+/* заливка при нажатом дизейбл */
+.filter-type__radio:checked:disabled + .filter-type__label::after {
+  content: "";
+  background-color: var(--color-base-gray);
+}
+
+/* бордер при нажатом дизейбл */
+.filter-type__radio:checked:disabled + .filter-type__label::before {
+  border: 2px solid var(--color-alt-light-grey);
+}

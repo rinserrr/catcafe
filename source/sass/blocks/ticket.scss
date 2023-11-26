@@ -1,0 +1,50 @@
+.ticket {
+  background-color: var(--color-corn-silk);
+}
+
+.ticket__wrapper {
+  padding: 100px 90px;
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    width: 642px;
+    height: 611px;
+    position: absolute;
+    content: "";
+    bottom: -204px;
+    left: -290px;
+    background-image: url("../../img/ticket/fon1.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &::before {
+    width: 447px;
+    height: 511px;
+    position: absolute;
+    content: "";
+    top: 174px;
+    right: 90px;
+    background-image: url("../../img/ticket/fon2.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.ticket__title {
+  margin-bottom: 24px;
+}
+
+.ticket__form {
+  padding: 40px;
+  width: 540px;
+  min-height: 511px;
+  background-color: var(--color-default-white);
+  position: relative;
+  z-index: 2;
+}
+
+.ticket__form-button {
+  width: 100%;
+}
